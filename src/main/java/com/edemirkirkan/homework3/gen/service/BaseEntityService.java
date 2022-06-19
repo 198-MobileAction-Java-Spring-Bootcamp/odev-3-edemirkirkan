@@ -78,11 +78,9 @@ public abstract class BaseEntityService<E extends BaseEntity, D extends JpaRepos
 
         if (entity.getId() == null){
             baseFields.setCreateDate(new Date());
-            //            baseAdditionalFields.setCreatedBy(); // TODO: update here after jwt
         }
 
         baseFields.setUpdateDate(new Date());
-        //        baseAdditionalFields.setUpdatedBy();// TODO: update here after jwt
     }
 
     public void delete(E e){
